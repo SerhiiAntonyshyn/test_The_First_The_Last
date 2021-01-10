@@ -4,10 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <div class="header">
+      <div class="logo">
+        <a
+          class="logo_link"
+          href="#"
+        >
+          <img
+            src="images/logo.png"
+            alt="logo"
+            class="logo__image"
+            width="102"
+            height="16"
+          >
+        </a>
+      </div>
+      <nav class="nav">
+        <div class="burger"></div>
+        <ul class="menu">
+          <li class="menu_item">
+            <a
+              class="link"
+              href="#"
+            >
+              Commercial
+            </a>
+          </li>
+          <li class="menu_item">
+            <a
+              class="link"
+              href="#"
+            >
+              Editorial
+            </a>
+          </li>
+          <li class="menu_item">
+            <a
+              class="link"
+              href="#"
+            >
+              Reportage
+            </a>
+          </li>
+          <li class="menu_item">
+            <a
+              class="link"
+              href="#"
+            >
+              Meet me
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="main">
+      <div class="vector">
+        <img
+          src="images/Vector.png"
+          alt="Vector"
+          class="vector_image"
+        >
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-content">Ink Lingerie</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">Ink Lingerie</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">Ink Lingerie</div>
+          </div>
+        </div>
+      </div>
+      <div class="photos">
+        <div
+          class="photo photo_main"
+          data-photo-index="0"
+          data-depth="0.2"
+        >
+          <img
+            class="photo_img"
+            src="images/image2.png"
+            alt="photo"
+          >
+          <img
+            class="photo_img photo_img_visible"
+            src="images/image1.png"
+            alt="photo"
+          >
+          <img
+            class="photo_img"
+            src="images/image3.png"
+            alt="photo"
+          >
+        </div>
+        <div
+          class="photo photo_left"
+          data-photo-index="1"
+          data-depth="0.6"
+        >
+          <img
+            class="photo_img photo_img_scale_x2"
+            src="images/image1.png"
+            alt="photo"
+          >
+          <img
+            class="photo_img photo_img_visible"
+            src="images/image3.png"
+            alt="photo"
+          >
+          <img
+            class="photo_img"
+            src="images/image2.png"
+            alt="photo"
+          >
+        </div>
+        <div
+          class="photo photo_right"
+          data-photo-index="2"
+          data-depth="0.4"
+        >
+          <img
+            class="photo_img"
+            src="images/image3.png"
+            alt="photo"
+          >
+          <img
+            class="photo_img photo_img_visible"
+            src="images/image2.png"
+            alt="photo"
+          >
+          <img
+            class="photo_img"
+            src="images/image1.png"
+            alt="photo"
+          >
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="socialNetworks">
+        <a href="#" class="socialNetworks_Inst">Inst</a>
+        <div class="socialNetworks_line"></div>
+        <a href="#" class="socialNetworks_Fb">Fb</a>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
+
 </html>

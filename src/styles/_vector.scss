@@ -1,0 +1,84 @@
+.vector {
+  position: fixed;
+  transform: translateY(-50%);
+  height: 90%;
+  width: 100%;
+  top: 50%;
+
+  @media all and (max-width: 1439px) {
+    height: 67%;
+  }
+  @media all and (max-width: 1023px) {
+    height: 110%;
+  }
+  @media all and (max-width: 767px) {
+    height: 80%;
+  }
+  @media all and (max-width: 413px) {
+    height: 75%;
+  }
+
+  &_image {
+    position: absolute;
+    width: 608.38px;
+    height: 726.48px;
+    left: calc(50% - 608.38px / 2 + 30px);
+    top: 7px;
+    z-index: -2;
+
+    @media all and (max-width: 1439px) {
+      width: 506px;
+      height: 605px;
+      text-align: center;
+    }
+    @media all and (max-width: 1023px) {
+      width: 628px;
+      height: 789px;
+      left: calc(50% - 628px / 2 + 10px);
+      top: 150px;
+    }
+    @media all and (max-width: 767px) {
+      width: 392px;
+      height: 493px;
+      left: calc(50% - 392px / 2 + 15px);
+      top: 121px;
+    }
+    @media all and (max-width: 413px) {
+      width: 339px;
+      height: 429px;
+      left: calc(50% - 339px / 2 );
+      top: 132px;
+    }
+
+    animation-name: Appearance;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.1,-0.6,0.2,0);
+  }
+
+  @-webkit-keyframes Appearance {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes Appearance {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes Appearance {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

@@ -1,7 +1,29 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "footer";
+@import "swiper";
+@import "photos";
+@import "vector";
 
 body {
-  background: $c-gray;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-cursor {
+  font-family: "TT_Travels Light", sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: black;
+  position: fixed;
+  opacity: 0;
+  transition: opacity 1s;
+
+  &_visible {
+    opacity: 1;
+  }
 }

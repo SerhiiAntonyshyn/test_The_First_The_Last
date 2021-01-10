@@ -1,6 +1,13 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: "TTTravels";
+  src: url("../fonts/TTTravels/TTTravels-Regular.ttf") format("opentype");
   font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Schnyder Cond XL Demi";
+  src: url("../fonts/Schnyder/Schnyder_X_Cond_XL_Demi.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
 }

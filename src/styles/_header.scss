@@ -1,0 +1,138 @@
+.logo {
+  position: fixed;
+  top: 40px;
+  left: 47px;
+  z-index: 99;
+  
+  @media all and (max-width: 1439px) {
+    top: 92px;
+    left: 32px;
+  }
+  @media all and (max-width: 767px) {
+    top: 103px;
+    left: 24px;
+  }
+  @media all and (max-width: 413px) {
+    width: 95px;
+    height: 16px;
+    top: 86px;
+    left: 20px;
+  }
+}
+
+.nav {
+  display: block;
+  position: fixed;
+  top: 43px;
+  right: 48px;
+  z-index: 100;
+
+  @media all and (max-width: 1439px) {
+    top: 97px;
+    right: 32px;
+  }
+  @media all and (max-width: 767px) {
+    top: 108px;
+    right: 24px;
+  }
+  @media all and (max-width: 413px) {
+    top: 91px;
+    right: 20px;
+  }
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media all and (max-width: 767px) {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: -100%;
+    top: 0;
+    background: rgba(255,255,255,0.95);
+    z-index: 100;
+    transition: 0.2s linear;
+
+    &_visible {
+      left: 0;
+    }
+  }
+
+  &_item {
+    font-family: "TTTravels", sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 0.6rem;
+    transition: 0.1s;
+    text-align: right;
+
+    &:hover {
+      transform: translateX(-5px) scale(1.05);
+    }
+
+    @media all and (max-width: 767px) {
+      padding: 20px 0;
+    }
+  }
+}
+
+.burger {
+  display: none;
+
+  @media all and (max-width: 767px) {
+    display: block;
+    z-index: 110;
+    width: 20px;
+    height: 9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &:after,
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: rgba(40, 40, 40, 0.57);
+      position: absolute;
+      transition: 0.1s;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+    }
+
+    &:after {
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &_active {
+    height: 18px;
+
+    &:after {
+      transform: rotate(45deg);
+      bottom: 8px;
+    }
+
+    &:before {
+      top: 8px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,112 @@
+.photos {
+  position: fixed;
+  top: 50%;
+  pointer-events: none;
+  height: 702px;
+  width: 100%;
+  transform: translateY(-50%);
+
+  @media all and (max-width: 1439px) {
+    height: 530px;
+  }
+  @media all and (max-width: 1023px) {
+    height: 530px;
+  }
+  @media all and (max-width: 767px) {
+    height: 403px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media all and (max-width: 413px) {
+    height: 368.56px;
+  }
+}
+
+.photo {
+  position: absolute;
+  overflow: hidden;
+
+  &_img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+
+    &_scale_x2 {
+      transform: translateY(120px) scale(2);
+    }
+
+    &_visible {
+      opacity: 1;
+    }
+  }
+
+  &_main {
+    width: 476px;
+    height: 100%;
+    top: 0;
+    left: calc(50% - 476px / 2);
+    transform: rotate(1.5deg);
+  
+    @media all and (max-width:1439px) {
+      width: 359px;
+      left: calc(50% - 359px / 2);
+    }
+    @media all and (max-width:767px) {
+      left: calc(50% - 273px / 2);
+      width: 273px;
+    }
+    @media all and (max-width:413px) {
+      left: calc(50vw - 250px / 2);
+      width: 249.67px;
+    }
+  }
+
+  &_left {
+    width: 238px;
+    height: 331px;
+    top: 128px;
+    left: calc(50vw - 476px / 2 - 5px - 238px);
+    transform: rotate(1.1deg);
+  
+    @media all and (max-width:1439px) {
+      left: calc(50% - 359px / 2 - 175px);
+      top: 109px;
+      width: 163px;
+      height: 226px;
+    }
+    @media all and (max-width:1023px) {
+      top: 120px;
+    }
+    @media all and (max-width:767px) {
+      display: none;
+    }
+  }
+
+  &_right {
+    width: 345px;
+    height: 238px;
+    bottom: 42px;
+    left: calc(50% + 150px);
+    transform: rotate(2.03deg);
+  
+    @media all and (max-width:1439px) {
+      top: 327px;
+      width: 234px;
+      height: 162px;
+      left: calc(50% + 130px);
+    }
+    @media all and (max-width:1023px) {
+      top: 300px;
+    }
+    @media all and (max-width:767px) {
+      display: none;
+    }
+  }
+}

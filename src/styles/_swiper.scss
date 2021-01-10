@@ -1,0 +1,68 @@
+.swiper-container {
+  transform: translateY(-40%);
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  position: absolute;
+
+  &:hover {
+    cursor: url(../images/cursor.png), auto;
+  }
+}
+
+.swiper-slide {
+  font-family: "Schnyder Cond XL Demi", sans-serif;
+  font-size: 125.58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  color: #580300;
+  text-transform: uppercase;
+
+  flex-basis: calc(65% - (100% - 1440px) / 480 * 60);
+  flex-shrink: 0;
+  flex-grow: 0;
+  letter-spacing: 8px;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.84px;
+  -webkit-text-stroke-color: #580300;
+  transition: 0.5s;
+
+  @media all and (max-width: 1439px) {
+    flex-basis: 62%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+  }
+  @media all and (max-width: 1023px) {
+    flex-basis: 65%;
+  }
+  @media all and (max-width: 767px) {
+    flex-basis: 62%;
+    font-size: 48px;
+    letter-spacing: 4px;
+  }
+  @media all and (max-width: 413px) {
+    flex-basis: 70%;
+    font-size: 48px;
+    letter-spacing: 4px;
+  }
+  @media all and (max-width: 374px) {
+    flex-basis: 75%;
+    font-size: 44px;
+  }
+
+  &-next {
+    transform: rotate(1.5deg);
+  }
+  &-prev {
+    transform: rotate(-1.5deg);
+  }
+  &-active {
+    -webkit-text-fill-color: #580300;
+    -webkit-text-stroke-width: none;
+    -webkit-text-stroke-color: none;
+  }
+}
